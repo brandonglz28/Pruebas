@@ -1,0 +1,9 @@
+void AssignMemory(char *p, int num) {
+p = (char *)malloc(sizeof(char) * num);
+}
+
+void Test() {
+char *str = NULL;
+AssignMemory(str, 100);
+strcpy(str, "Hola");
+}
